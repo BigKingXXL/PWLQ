@@ -30,7 +30,7 @@ import pandas as pd
 from glob import glob
 from datetime import datetime
 
-from quant import *
+from PWLQ import *
 from fold_batch_norm import *
 
 def mystr2bool(v):
