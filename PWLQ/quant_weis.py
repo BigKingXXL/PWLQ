@@ -100,7 +100,7 @@ def quant_weights(w, args):
     err = float(torch.sum(torch.mul(qw - w, qw - w)))
 
     abs_max = torch.max(torch.abs(w))
-    break_point = abs_max * bkp_ratio
-    tail_num = np.sum(torch.abs(w).detach().numpy() > float(break_point))
+    # break_point = abs_max * bkp_ratio
+    # tail_num = np.sum(torch.abs(w).detach().numpy() > float(break_point))
 
-    return qw, err, tail_num
+    return qw, err, 1
